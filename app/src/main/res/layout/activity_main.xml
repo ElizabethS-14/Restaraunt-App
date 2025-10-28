@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#778899"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bloom and Wave"
+        android:translationY="-100dp"
+        android:textSize="46sp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="italic"
+        android:id="@+id/Name"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\t\t\t\t\t\t\t\tOpen: \nMonday - Sunday \n\t\t\t\t10am - 10pm"
+        android:translationY="120dp"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:id="@+id/Hours"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\t\t\t\t\tInformation:\nPhone: 443-864-0924 \nAddress: 8967 Ballpark Ave"
+        android:translationY="280sp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:id="@+id/Info"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="32sp"
+        android:translationY="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/Menu"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="179dp"
+        android:layout_height="132dp"
+        app:srcCompat="@drawable/restaurant_app_logo"
+        android:translationY="-300dp"
+        />
+
+
+</LinearLayout>

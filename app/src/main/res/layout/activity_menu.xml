@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#778899"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\t\t\tAPPETIZERS:\nCrab Soup ------ $14.99\nFried Calamari ------ $10\nMozerella Sticks ------ $6.99\nCezar Salad ------ $10"
+        android:translationY="-80dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\t\t\t\t\t\t\t\t\tMAIN COURSE:\nGarlic Shrimp ------ $16.50\nCrab Stuffed Salmon ------ $32.79\nLobster tail with butter ------ $22.50\nSnow Crab Legs ------ $40.99"
+        android:translationY="-60dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\t\t\t\t\t\t\t\t\tDESSERTS:\nKey Lime Pie ------ $7.99\nNew York Cheesecake ------ $7.99\nChocolate Lava Cake ------ $6.99\nVanilla Ice Cream ------ $6.99"
+        android:translationY="-40dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\t\t\tDRINKS:\nCoke ------ $5\nLemonade ------ $5\nIced Tea ------ $5\nRoot Beer ------ $5"
+        android:translationY="-20sp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="40dp"
+        android:text="Return Back"
+        android:textSize="24sp"
+        android:id="@+id/Return"
+        />
+
+
+</LinearLayout>
