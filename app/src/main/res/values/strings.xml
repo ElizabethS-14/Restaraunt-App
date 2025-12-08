@@ -5,7 +5,7 @@
     <string name="info_text">Information:</string>
     <string name="phone">Phone: 443-864-0924</string>
     <string name="address">Address: 8967 Ballpark Ave</string>
-    <string name="menu_button">Menue</string>
+    <string name="menu_button">Menu</string>
 
     <!-- Menu Screen -->
     <string name="menu_items">Select Your Item</string>
@@ -14,7 +14,7 @@
     <string name="items3">Garlic Shrimp - $16.50</string>
 
     <!-- Add-ons -->
-    <string name="addon_label">ADD_ONS</string>
+    <string name="addon_label">ADD-ONS</string>
     <string name="addon1">Side of Fries (+$3.00)</string>
     <string name="addon2">Mixed Fruit (+$2.50)</string>
 

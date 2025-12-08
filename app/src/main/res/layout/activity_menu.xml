@@ -10,22 +10,45 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/menu_items"
-        android:translationY="-220dp"
         android:fontFamily="sans-serif"
-        android:textSize="30sp"
+        android:text="@string/menu_items"
         android:textColor="@color/white"
+        android:textSize="30sp"
+        android:translationY="0dp"
 
         />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:translationY="10dp"
+        android:translationX="100dp"
+        app:srcCompat="@drawable/crab_stuffedsalmon_rest__app" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="139dp"
+        android:layout_height="99dp"
+        android:translationX="100dp"
+        app:srcCompat="@drawable/butter_lobster_tails__rest__app" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="214dp"
+        android:layout_height="160dp"
+        android:translationX="100dp"
+        app:srcCompat="@drawable/garlic_shrimp__rest__app" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/item1"
-        android:translationY="-200dp"
         android:fontFamily="sans-serif"
-        android:textSize="20sp"
+        android:text="@string/item1"
         android:textColor="@color/white"
+        android:textSize="20sp"
+        android:translationY="-400dp"
+        android:translationX="-60dp"
 
         />
 
@@ -33,7 +56,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/items2"
-        android:translationY="-140dp"
+        android:translationY="-310dp"
+        android:translationX="-50dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -44,7 +68,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/items3"
-        android:translationY="-80sp"
+        android:translationY="-220sp"
+        android:translationX="-90dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -53,7 +78,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:translationY="280dp"
+        android:translationY="100dp"
+        android:translationX="-100dp"
         android:text="Return Back"
         android:textSize="24sp"
         android:id="@+id/Return"
@@ -63,17 +89,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addon_label"
-        android:translationY="-60dp"
+        android:translationY="-140dp"
         android:fontFamily="sans-serif"
         android:textSize="30sp"
         android:textColor="@color/white"
 
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addon1"
-        android:translationY="-20dp"
+        android:translationY="-140dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -84,13 +111,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addon2"
-        android:translationY="60dp"
+        android:translationY="-100dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:textColor="@color/white"
 
         />
-
 
 
 </LinearLayout>
