@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Restarant App2</string>
+    <!--Home Screen -->
+    <string name="restaurant_name">Bloom and wave</string>
+    <string name="hours_text">\t\t\t\t\t\t\t\t\t\t\t\tOpen:\nMonday - Sunday\n10am - 10pm</string>
+    <string name="info_text">Information:</string>
+    <string name="phone">Phone: 443-864-0924</string>
+    <string name="address">Address: 8967 Ballpark Ave</string>
+    <string name="menu_button">Menue</string>
+
+    <!-- Menu Screen -->
+    <string name="menu_items">Select Your Item</string>
+    <string name="item1">Crab Stuffed Salmon - $32.79</string>
+    <string name="items2">Lobster Tail with Butter - $22.50</string>
+    <string name="items3">Garlic Shrimp - $16.50</string>
+
+    <!-- Add-ons -->
+    <string name="addon_label">ADD_ONS</string>
+    <string name="addon1">Side of Fries (+$3.00)</string>
+    <string name="addon2">Mixed Fruit (+$2.50)</string>
+
 </resources>

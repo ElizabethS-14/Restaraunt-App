@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bloom and Wave"
+        android:text="@string/restaurant_name"
         android:translationY="-100dp"
         android:textSize="46sp"
         android:textAllCaps="true"
@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\t\t\t\t\t\t\t\t\t\t\tOpen: \nMonday - Sunday \n\t\t\t\t10am - 10pm"
+        android:text="@string/hours_text"
         android:translationY="120dp"
         android:textSize="32sp"
         android:textColor="@color/white"
@@ -35,19 +35,41 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\t\t\t\t\t\t\t\tInformation:\nPhone: 443-864-0924 \nAddress: 8967 Ballpark Ave"
-        android:translationY="280sp"
+        android:text="@string/info_text"
+        android:translationY="240sp"
         android:textSize="20sp"
         android:textColor="@color/white"
         android:fontFamily="serif"
         android:id="@+id/Info"
 
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:translationY="240sp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:id="@+id/Phone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:translationY="240sp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:id="@+id/Address"
+
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu"
+        android:text="@string/menu_button"
         android:textSize="32sp"
         android:translationY="80dp"
         android:fontFamily="sans-serif-medium"

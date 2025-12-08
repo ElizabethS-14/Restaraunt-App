@@ -1,6 +1,7 @@
 package edu.bpi.restarantapp2;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     TextView Info;
 
+    TextView Phone;
+
+    TextView Address;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         Name = (TextView) findViewById(R.id.Name);
         Hours = (TextView) findViewById(R.id.Hours);
         Info = (TextView) findViewById(R.id.Info);
+        Phone = (TextView) findViewById(R.id.Phone);
+        Address = (TextView) findViewById(R.id.Address);
 
         Menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,5 +47,34 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPhonePad();
+            }
+        });
+
+        Address.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMap();
+            }
+        });
+    }
+
+    private void openPhonePad(){
+        String phoneNumber = "4438640934";
+        //the Intent is the messenger and ACTION_DIAL basically says I want to dial a phone number
+        Intent dailIntent = new Intent(Intent.ACTION_DIAL);
+        //gives the intent the phone #
+        dailIntent.setData(Uri.parse(phoneNumber));
+        startActivity(dailIntent);
+    }
+
+    private void openMap(){
+        Uri location = Uri.parse("geo:0,0?q=600+E+Pratt+St,+Baltimore,+Maryland");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+        startActivity(mapIntent);
     }
 }
