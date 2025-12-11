@@ -14,30 +14,38 @@
         android:text="@string/menu_items"
         android:textColor="@color/white"
         android:textSize="30sp"
-        android:translationY="0dp"
+        android:translationY="280dp"
 
         />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/IV2"
         android:layout_width="130dp"
         android:layout_height="140dp"
-        android:translationY="10dp"
+        android:translationY="300dp"
         android:translationX="100dp"
+        android:clickable="true"
+        android:focusable="true"
         app:srcCompat="@drawable/crab_stuffedsalmon_rest__app" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/IV3"
         android:layout_width="139dp"
         android:layout_height="99dp"
         android:translationX="100dp"
+        android:translationY="300dp"
+        android:clickable="true"
+        android:focusable="true"
         app:srcCompat="@drawable/butter_lobster_tails__rest__app" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/IV4"
         android:layout_width="214dp"
         android:layout_height="160dp"
         android:translationX="100dp"
+        android:translationY="300dp"
+        android:clickable="true"
+        android:focusable="true"
         app:srcCompat="@drawable/garlic_shrimp__rest__app" />
 
     <TextView
@@ -47,7 +55,7 @@
         android:text="@string/item1"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:translationY="-400dp"
+        android:translationY="-100dp"
         android:translationX="-60dp"
 
         />
@@ -56,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/items2"
-        android:translationY="-310dp"
+        android:translationY="-10dp"
         android:translationX="-50dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
@@ -68,28 +76,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/items3"
-        android:translationY="-220sp"
+        android:translationY="100sp"
         android:translationX="-90dp"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:textColor="@color/white"
 
         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:translationY="100dp"
+        android:translationY="432dp"
         android:translationX="-100dp"
         android:text="Return Back"
         android:textSize="24sp"
         android:id="@+id/Return"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="380dp"
+        android:translationX="80dp"
+        android:text="View Order"
+        android:textSize="24sp"
+        android:id="@+id/Order"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addon_label"
-        android:translationY="-140dp"
+        android:translationY="120dp"
         android:fontFamily="sans-serif"
         android:textSize="30sp"
         android:textColor="@color/white"
@@ -100,7 +119,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addon1"
-        android:translationY="-140dp"
+        android:translationY="120dp"
+        android:id="@+id/side1"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -111,12 +131,107 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addon2"
-        android:translationY="-100dp"
+        android:translationY="170dp"
+        android:id="@+id/side2"
         android:fontFamily="sans-serif"
         android:textSize="20sp"
         android:textColor="@color/white"
 
         />
 
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:text=""
+        android:textSize="30sp"
+        android:translationX="-40dp"
+        android:id="@+id/quant1"
+        android:translationY="-340dp"
+        />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:text=""
+        android:textSize="30sp"
+        android:translationX="-40dp"
+        android:id="@+id/quant2"
+        android:translationY="-280dp"
+        />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:text=""
+        android:textSize="30sp"
+        android:translationX="-40dp"
+        android:id="@+id/quant3"
+        android:translationY="-210dp"
+        />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:text=""
+        android:textSize="30sp"
+        android:translationX="40dp"
+        android:id="@+id/quant4"
+        android:translationY="-110dp"
+        />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:text=""
+        android:textSize="30sp"
+        android:translationX="40dp"
+        android:id="@+id/quant5"
+        android:translationY="-100dp"
+        />
 
+    <Button
+        android:id="@+id/minus1"
+        android:layout_width="73dp"
+        android:layout_height="46dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:translationX="-160dp"
+        android:translationY="-680dp"
+        />
+
+    <Button
+        android:id="@+id/minus2"
+        android:layout_width="73dp"
+        android:layout_height="42dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:translationX="-160dp"
+        android:translationY="-600dp"
+        />
+
+    <Button
+        android:id="@+id/minus3"
+        android:layout_width="73dp"
+        android:layout_height="42dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:translationX="-160dp"
+        android:translationY="-500dp"
+        />
+
+    <Button
+        android:id="@+id/minus4"
+        android:layout_width="73dp"
+        android:layout_height="42dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:translationX="-80dp"
+        android:translationY="-380dp"
+        />
+
+    <Button
+        android:id="@+id/minus5"
+        android:layout_width="73dp"
+        android:layout_height="42dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:translationX="-80dp"
+        android:translationY="-340dp"
+        />
 </LinearLayout>
