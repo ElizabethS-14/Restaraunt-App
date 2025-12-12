@@ -81,6 +81,21 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        Order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, Order.class);
+
+                intent.putExtra("q1", q1);
+                intent.putExtra("q2", q2);
+                intent.putExtra("q3", q3);
+                intent.putExtra("q4", q4);
+                intent.putExtra("q5", q5);
+
+                startActivity(intent);
+            }
+        });
+
         minus1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

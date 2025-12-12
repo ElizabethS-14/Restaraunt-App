@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#778899"
+    tools:context=".Order"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here is your finished order"
+        android:textSize="30sp"
+        android:translationY="-100dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Food"
+        android:text="Crab Stuffed salmon x 2\nFood\nFood\nfood\nfood"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:translationY="0dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtotal = \nTax (6%)=\nTotal ="
+        android:textSize="30sp"
+        android:id="@+id/Costs"
+        android:textColor="@color/white"
+        android:translationX="-60dp"
+        android:translationY="100dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="-110dp"
+        android:translationY="187dp"
+        android:text="Back To Menu"
+        android:id="@+id/BackM"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="110dp"
+        android:translationY="140dp"
+        android:text="Confirm Order"
+        android:id="@+id/Confirm"
+        android:textSize="20sp"
+        />
+
+
+
+</LinearLayout>

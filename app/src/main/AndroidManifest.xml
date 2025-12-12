@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestarantApp2">
         <activity
+            android:name=".Order"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="false" />
         <activity
