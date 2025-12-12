@@ -47,9 +47,28 @@ public class Order extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendEmail();
+            }
+        });
     }
 
-    private void displayOrder(int q1,int q2,int q3,int q4,int q5){
+    private void sendEmail() {
+        String subject = getString(R.string.email_subject);
+        String body = getString(R.string.email_intro);
+
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.setType("message/rfc822");
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, body);
+        startActivity(emailIntent);
+    }
+
+
+        private void displayOrder(int q1,int q2,int q3,int q4,int q5){
         double price1 = 32.79;
         double price2 = 22.50;
         double price3 = 16.50;
@@ -57,6 +76,7 @@ public class Order extends AppCompatActivity {
         double price5 = 2.50;
 
         double subtotal = 0.0;
+        double tax = 0.0;
         double total = 0.0;
 
         String Name1 = "Crab Stuffed Salmon - $32.79 ";
@@ -65,6 +85,12 @@ public class Order extends AppCompatActivity {
         String Name4 = "Side of Fries - $3.00";
         String Name5 = "Mixed Fruit - $2.50";
 
-         Costs.setText(q1 + " x " + Name1 +"\n"+ q2 + "x " + Name2 +"\n"+ q3 + "x " + Name3 +"\n" + q4 + "x " + Name4 +"\n" + q5 + "x " + Name5);
+         Food.setText(q1 + " x " + Name1 +"\n"+ q2 + "x " + Name2 +"\n"+ q3 + "x " + Name3 +"\n" + q4 + "x " + Name4 +"\n" + q5 + "x " + Name5);
+
+         subtotal = q1*price1 + q2*price2 + q3*price3 + q4*price4 + q5*price5;
+         tax = Math.round(subtotal*0.06);
+         total = subtotal + tax;
+
+         Costs.setText("Subtotal = $" + subtotal + "\nTax (6%) = $" + tax + "\nTotal = $" + total);
     }
 }

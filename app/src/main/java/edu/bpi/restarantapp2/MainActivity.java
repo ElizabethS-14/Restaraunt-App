@@ -48,28 +48,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Phone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPhonePad();
-            }
-        });
-
         Address.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openMap();
             }
         });
-    }
-
-    private void openPhonePad(){
-        String phoneNumber = "4438640934";
-        //the Intent is the messenger and ACTION_DIAL basically says I want to dial a phone number
-        Intent dailIntent = new Intent(Intent.ACTION_DIAL);
-        //gives the intent the phone #
-        dailIntent.setData(Uri.parse(phoneNumber));
-        startActivity(dailIntent);
     }
 
     private void openMap(){
